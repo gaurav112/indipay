@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\View;
 use Softon\Indipay\Exceptions\IndipayParametersMissingException;
 
-class CCAvenueInGateway implements CCAvenueGateway {
+class CCAvenueAeGateway implements CCAvenueGateway {
 
     protected $parameters = array();
     protected $merchantData = '';
@@ -20,8 +20,8 @@ class CCAvenueInGateway implements CCAvenueGateway {
 
     function __construct()
     {
-        $this->workingKey = Config::get('indipay.ccavenue.in.workingKey');
-        $this->accessCode = Config::get('indipay.ccavenue.in.accessCode');
+        $this->workingKey = Config::get('indipay.ccavenue.ae.workingKey');
+        $this->accessCode = Config::get('indipay.ccavenue.ae.accessCode');
         $this->testMode = Config::get('indipay.testMode');
         $this->parameters['merchant_id'] = Config::get('indipay.ccavenue.merchantId');
         $this->parameters['currency'] = Config::get('indipay.ccavenue.currency');
