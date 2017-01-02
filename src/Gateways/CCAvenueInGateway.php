@@ -20,13 +20,13 @@ class CCAvenueInGateway extends CCAvenueGateway {
 
     function __construct()
     {
-        $this->workingKey = Config::get('indipay.ccavenue.workingKey');
-        $this->accessCode = Config::get('indipay.ccavenue.accessCode');
+        $this->workingKey = Config::get('indipay.ccavenuein.workingKey');
+        $this->accessCode = Config::get('indipay.ccavenuein.accessCode');
         $this->testMode = Config::get('indipay.testMode');
-        $this->parameters['merchant_id'] = Config::get('indipay.ccavenue.merchantId');
-        $this->parameters['currency'] = Config::get('indipay.ccavenue.currency');
-        $this->parameters['redirect_url'] = url(Config::get('indipay.ccavenue.redirectUrl'));
-        $this->parameters['cancel_url'] = url(Config::get('indipay.ccavenue.cancelUrl'));
-        $this->parameters['language'] = Config::get('indipay.ccavenue.language');
+        $this->parameters['merchant_id'] = Config::get('indipay.ccavenuein.merchantId');
+        $this->parameters['currency'] = Config::get('indipay.ccavenuein.currency');
+        $this->parameters['redirect_url'] = url(Config::get('indipay.ccavenuein.redirectUrl'));
+        $this->parameters['cancel_url'] = url(Config::get('indipay.ccavenuein.cancelUrl'));
+        $this->parameters['language'] = Config::get('indipay.ccavenuein.language');
     }
 }
