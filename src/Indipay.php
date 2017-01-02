@@ -1,6 +1,7 @@
 <?php namespace Softon\Indipay;
 
-use Softon\Indipay\Gateways\CCAvenueGateway;
+use Softon\Indipay\Gateways\CCAvenueAeGateway;
+use Softon\Indipay\Gateways\CCAvenueInGateway;
 use Softon\Indipay\Gateways\CitrusGateway;
 use Softon\Indipay\Gateways\EBSGateway;
 use Softon\Indipay\Gateways\InstaMojoGateway;
@@ -45,8 +46,12 @@ class Indipay {
     {
         switch($name)
         {
-            case 'CCAvenue':
-                $this->gateway = new CCAvenueGateway();
+            case 'CCAvenueIn':
+                $this->gateway = new CCAvenueInGateway();
+                break;
+
+            case 'CCAvenueAe':
+                $this->gateway = new CCAvenueAeGateway();
                 break;
 
             case 'PayUMoney':
