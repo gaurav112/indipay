@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\View;
 use Softon\Indipay\Exceptions\IndipayParametersMissingException;
 
-class CCAvenueAeGateway implements CCAvenueGateway {
+class CCAvenueAeGateway extends CCAvenueGateway {
 
     protected $parameters = array();
     protected $merchantData = '';
