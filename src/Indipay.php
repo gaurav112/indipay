@@ -22,9 +22,7 @@ class Indipay {
 
     public function purchase($parameters = array())
     {
-
         return $this->gateway->request($parameters)->send();
-
     }
 
     public function response($request)
