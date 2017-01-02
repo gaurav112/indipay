@@ -20,13 +20,13 @@ class CCAvenueAeGateway implements CCAvenueGateway {
 
     function __construct()
     {
-        $this->workingKey = Config::get('indipay.ccavenue.ae.workingKey');
-        $this->accessCode = Config::get('indipay.ccavenue.ae.accessCode');
+        $this->workingKey = Config::get('indipay.ccavenueae.workingKey');
+        $this->accessCode = Config::get('indipay.ccavenueae.accessCode');
         $this->testMode = Config::get('indipay.testMode');
-        $this->parameters['merchant_id'] = Config::get('indipay.ccavenue.merchantId');
-        $this->parameters['currency'] = Config::get('indipay.ccavenue.currency');
-        $this->parameters['redirect_url'] = url(Config::get('indipay.ccavenue.redirectUrl'));
-        $this->parameters['cancel_url'] = url(Config::get('indipay.ccavenue.cancelUrl'));
-        $this->parameters['language'] = Config::get('indipay.ccavenue.language');
+        $this->parameters['merchant_id'] = Config::get('indipay.ccavenueae.merchantId');
+        $this->parameters['currency'] = Config::get('indipay.ccavenueae.currency');
+        $this->parameters['redirect_url'] = url(Config::get('indipay.ccavenueae.redirectUrl'));
+        $this->parameters['cancel_url'] = url(Config::get('indipay.ccavenueae.cancelUrl'));
+        $this->parameters['language'] = Config::get('indipay.ccavenueae.language');
     }
 }

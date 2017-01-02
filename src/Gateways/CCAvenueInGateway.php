@@ -20,8 +20,8 @@ class CCAvenueInGateway implements CCAvenueGateway {
 
     function __construct()
     {
-        $this->workingKey = Config::get('indipay.ccavenue.in.workingKey');
-        $this->accessCode = Config::get('indipay.ccavenue.in.accessCode');
+        $this->workingKey = Config::get('indipay.ccavenue.workingKey');
+        $this->accessCode = Config::get('indipay.ccavenue.accessCode');
         $this->testMode = Config::get('indipay.testMode');
         $this->parameters['merchant_id'] = Config::get('indipay.ccavenue.merchantId');
         $this->parameters['currency'] = Config::get('indipay.ccavenue.currency');
