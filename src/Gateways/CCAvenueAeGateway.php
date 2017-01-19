@@ -14,8 +14,8 @@ class CCAvenueAeGateway extends CCAvenueGateway {
     protected $testMode = false;
     protected $workingKey = '';
     protected $accessCode = '';
-    protected $liveEndPoint = 'https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction';
-    protected $testEndPoint = 'https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction';
+    protected $liveEndPoint = 'https://secure.ccavenue.ae/transaction/transaction.do?command=initiateTransaction';
+    protected $testEndPoint = 'https://test.ccavenue.ae/transaction/transaction.do?command=initiateTransaction';
     public $response = '';
 
     function __construct()
